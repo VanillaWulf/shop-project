@@ -193,6 +193,10 @@ body {
     display: block;
 }
 
+.fetured__item-button:hover {
+    background-color: var(--pink-color);
+}
+
 .fetured__item-button {
     display: none;
     position: absolute;
