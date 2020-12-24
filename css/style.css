@@ -262,7 +262,7 @@ body {
   border: 1px solid #FFF;
 }
 
-.fetured .fetured__item-button .fetured__item-button:hover {
+.fetured .fetured__item-button:hover {
   background-color: #F16D7F;
 }
 
