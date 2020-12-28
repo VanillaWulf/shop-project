@@ -4,6 +4,10 @@
     .fetured__text {
         @include font(14px, 17px, 800);
         margin: 0 0 48px;
+
+        @include tablet {
+            margin: 0 0 73px;
+        }
     }
 
     .fetured__list {
