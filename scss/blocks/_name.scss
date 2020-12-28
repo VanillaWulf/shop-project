@@ -5,23 +5,23 @@
         @include font(32px, 38px, 700);
         color: $pink-color;
     }
-    
+
     .name__header {
         @include font(48px, 58px, 900);
         text-transform: uppercase;
     }
-    
+
     .name__content {
         width: 100%;
         padding: 335px 0 0 64px;
         background-color: $pink-background;
     }
-    
+
     .name__header {
         position: relative;
         padding: 0 0 0 28px;
     }
-    
+
     .name__header::before {
         position: absolute;
         content: '';
@@ -35,4 +35,28 @@
 .name__header-span {
     @include font(32px, 38px, 700);
     color: $pink-color;
+}
+
+@media (max-width: $desktop-width) {
+    .name {
+
+        .name__img {
+            width: 50%;
+            height: auto;
+        }
+
+        .name__content {
+            padding: 138px 0 0 40px;
+        }
+
+        .name__header-span {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .name__header {
+            font-size: 44px;
+            line-height: 52px;
+        }
+    }
 }

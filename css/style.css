@@ -71,6 +71,12 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1599px) {
+  .container {
+    width: 96%;
+  }
+}
+
 .header {
   background-color: #222222;
 }
@@ -114,6 +120,12 @@ body {
 
 .header .header__menu-item:not(:last-of-type) {
   margin: 0 34px 0 0;
+}
+
+@media (max-width: 1599px) {
+  .header .header__container {
+    width: 91.5%;
+  }
 }
 
 .name {
@@ -164,8 +176,32 @@ body {
   color: #F16D7F;
 }
 
+@media (max-width: 1599px) {
+  .name .name__img {
+    width: 50%;
+    height: auto;
+  }
+  .name .name__content {
+    padding: 138px 0 0 40px;
+  }
+  .name .name__header-span {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .name .name__header {
+    font-size: 44px;
+    line-height: 52px;
+  }
+}
+
 .stock {
   padding: 63px 0 97px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .stock {
+    padding: 19px 0 155px;
+  }
 }
 
 .stock .stock__list {
@@ -188,6 +224,18 @@ body {
 
 .stock .stock__item:not(.stock__item--last) {
   margin: 0 0 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .stock .stock__item:not(.stock__item--last) {
+    margin: 0 0 19px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .stock .stock__item {
+    width: 31.5%;
+  }
 }
 
 .stock .stock__item--last {
@@ -219,6 +267,12 @@ body {
   font-weight: 800;
   font-style: normal;
   margin: 0 0 48px;
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .fetured .fetured__text {
+    margin: 0 0 73px;
+  }
 }
 
 .fetured .fetured__list {

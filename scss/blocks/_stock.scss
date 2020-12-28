@@ -1,6 +1,10 @@
 .stock {
     padding: 63px 0 97px 0;
 
+    @include tablet {
+        padding: 19px 0 155px;
+    }
+
     .stock__list {
         display: flex;
         justify-content: space-between;
@@ -20,7 +24,16 @@
 
         &:not(.stock__item--last) {
             margin: 0 0 30px;
+            
+            @include tablet {
+                margin: 0 0 19px;
+            }
         }
+
+        @include tablet {
+            width: 31.5%;
+        }
+    
     }
     
     .stock__item--last {
